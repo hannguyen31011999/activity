@@ -9,5 +9,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
+    protected $codeSuccess = 200;
+    protected $codeAuthentication = 401;
+    protected $codeFails = 500;
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
